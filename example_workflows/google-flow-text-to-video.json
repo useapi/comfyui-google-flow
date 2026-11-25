@@ -1,0 +1,199 @@
+{
+  "id": "b8b921fe-7c23-4cae-baa5-c4aeded2b0e4",
+  "revision": 0,
+  "last_node_id": 2,
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "UseapiGoogleFlowVideo",
+      "pos": [
+        520,
+        90
+      ],
+      "size": [
+        450,
+        600
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "start_image",
+          "name": "start_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "end_image",
+          "name": "end_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "email",
+          "name": "email",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "email"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_wait_seconds",
+          "name": "max_wait_seconds",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_wait_seconds"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        },
+        {
+          "localized_name": "media_id",
+          "name": "media_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "file_path",
+          "name": "file_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UseapiGoogleFlowVideo",
+        "cnr_id": "useapi-google-flow",
+        "ver": "0.1.0"
+      },
+      "widgets_values": [
+        "Handheld street-level shot of a paper boat racing down a rain gutter in a neon-lit Tokyo alley at night, reflections on wet asphalt, light rain, city ambience",
+        "omni-flash-1.2",
+        "landscape",
+        10,
+        "720p",
+        1,
+        "fixed",
+        "",
+        900
+      ],
+      "widgets_values_named": {
+        "prompt": "Handheld street-level shot of a paper boat racing down a rain gutter in a neon-lit Tokyo alley at night, reflections on wet asphalt, light rain, city ambience",
+        "model": "omni-flash-1.2",
+        "aspect_ratio": "landscape",
+        "duration": 10,
+        "resolution": "720p",
+        "seed": 1,
+        "control_after_generate": "fixed",
+        "email": "",
+        "max_wait_seconds": 900
+      }
+    },
+    {
+      "id": 2,
+      "type": "Note",
+      "pos": [
+        50,
+        90
+      ],
+      "size": [
+        430,
+        250
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Google Flow through the useapi.net API (third-party, not affiliated with Google).\n\nBefore you queue:\n1. Get a useapi.net API token: https://useapi.net/docs/start-here/setup-useapi?utm_source=comfyui&utm_medium=workflow\n2. Connect your Google account once: https://useapi.net/docs/start-here/setup-google-flow?utm_source=comfyui&utm_medium=workflow\n3. Set USEAPI_TOKEN before starting ComfyUI, or put the token in ComfyUI/user/useapi_token.txt.\n\nOmni 1.2 Flash text to video: 3 to 10 s on any plan, up to 15 s on a paid Google AI plan; 360p or 720p. Videos are saved to output/useapi-google-flow."
+      ],
+      "widgets_values_named": {
+        "text": "Google Flow through the useapi.net API (third-party, not affiliated with Google).\n\nBefore you queue:\n1. Get a useapi.net API token: https://useapi.net/docs/start-here/setup-useapi?utm_source=comfyui&utm_medium=workflow\n2. Connect your Google account once: https://useapi.net/docs/start-here/setup-google-flow?utm_source=comfyui&utm_medium=workflow\n3. Set USEAPI_TOKEN before starting ComfyUI, or put the token in ComfyUI/user/useapi_token.txt.\n\nOmni 1.2 Flash text to video: 3 to 10 s on any plan, up to 15 s on a paid Google AI plan; 360p or 720p. Videos are saved to output/useapi-google-flow."
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9,
+      "offset": [
+        20,
+        60
+      ]
+    }
+  },
+  "version": 0.4
+}

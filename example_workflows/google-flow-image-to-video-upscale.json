@@ -1,0 +1,455 @@
+{
+  "id": "21bddac6-a71b-4a19-8549-f2ca7d61ee95",
+  "revision": 0,
+  "last_node_id": 5,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "UseapiGoogleFlowImage",
+      "pos": [
+        50,
+        380
+      ],
+      "size": [
+        430,
+        330
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "reference_images",
+          "name": "reference_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "count",
+          "name": "count",
+          "type": "INT",
+          "widget": {
+            "name": "count"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "email",
+          "name": "email",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "email"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            1,
+            2
+          ]
+        },
+        {
+          "localized_name": "media_ids",
+          "name": "media_ids",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UseapiGoogleFlowImage",
+        "cnr_id": "useapi-google-flow",
+        "ver": "0.1.0"
+      },
+      "widgets_values": [
+        "A paper boat sailing on a calm teal lake at sunrise, soft mist, cinematic photo",
+        "nano-banana-2-lite",
+        "16:9",
+        1,
+        42,
+        "fixed",
+        ""
+      ],
+      "widgets_values_named": {
+        "prompt": "A paper boat sailing on a calm teal lake at sunrise, soft mist, cinematic photo",
+        "model": "nano-banana-2-lite",
+        "aspect_ratio": "16:9",
+        "count": 1,
+        "seed": 42,
+        "control_after_generate": "fixed",
+        "email": ""
+      }
+    },
+    {
+      "id": 2,
+      "type": "PreviewImage",
+      "pos": [
+        50,
+        750
+      ],
+      "size": [
+        430,
+        300
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 3,
+      "type": "UseapiGoogleFlowVideo",
+      "pos": [
+        520,
+        90
+      ],
+      "size": [
+        450,
+        600
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "start_image",
+          "name": "start_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "localized_name": "end_image",
+          "name": "end_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "aspect_ratio",
+          "name": "aspect_ratio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspect_ratio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "duration",
+          "name": "duration",
+          "type": "INT",
+          "widget": {
+            "name": "duration"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "email",
+          "name": "email",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "email"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_wait_seconds",
+          "name": "max_wait_seconds",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_wait_seconds"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        },
+        {
+          "localized_name": "media_id",
+          "name": "media_id",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        },
+        {
+          "localized_name": "file_path",
+          "name": "file_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UseapiGoogleFlowVideo",
+        "cnr_id": "useapi-google-flow",
+        "ver": "0.1.0"
+      },
+      "widgets_values": [
+        "The paper boat drifts slowly forward across the lake, gentle ripples, mist moving, slow camera push in",
+        "veo-3.1-lite",
+        "landscape",
+        8,
+        "720p",
+        1,
+        "fixed",
+        "",
+        900
+      ],
+      "widgets_values_named": {
+        "prompt": "The paper boat drifts slowly forward across the lake, gentle ripples, mist moving, slow camera push in",
+        "model": "veo-3.1-lite",
+        "aspect_ratio": "landscape",
+        "duration": 8,
+        "resolution": "720p",
+        "seed": 1,
+        "control_after_generate": "fixed",
+        "email": "",
+        "max_wait_seconds": 900
+      }
+    },
+    {
+      "id": 4,
+      "type": "UseapiGoogleFlowUpscaleVideo",
+      "pos": [
+        1010,
+        90
+      ],
+      "size": [
+        440,
+        480
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "media_id",
+          "name": "media_id",
+          "type": "STRING",
+          "widget": {
+            "name": "media_id"
+          },
+          "link": 3
+        },
+        {
+          "localized_name": "resolution",
+          "name": "resolution",
+          "type": "COMBO",
+          "widget": {
+            "name": "resolution"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_wait_seconds",
+          "name": "max_wait_seconds",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "max_wait_seconds"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "video",
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        },
+        {
+          "localized_name": "file_path",
+          "name": "file_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UseapiGoogleFlowUpscaleVideo",
+        "cnr_id": "useapi-google-flow",
+        "ver": "0.1.0"
+      },
+      "widgets_values": [
+        "",
+        "1080p",
+        900
+      ],
+      "widgets_values_named": {
+        "media_id": "",
+        "resolution": "1080p",
+        "max_wait_seconds": 900
+      }
+    },
+    {
+      "id": 5,
+      "type": "Note",
+      "pos": [
+        50,
+        90
+      ],
+      "size": [
+        430,
+        250
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Google Flow through the useapi.net API (third-party, not affiliated with Google).\n\nBefore you queue:\n1. Get a useapi.net API token: https://useapi.net/docs/start-here/setup-useapi?utm_source=comfyui&utm_medium=workflow\n2. Connect your Google account once: https://useapi.net/docs/start-here/setup-google-flow?utm_source=comfyui&utm_medium=workflow\n3. Set USEAPI_TOKEN before starting ComfyUI, or put the token in ComfyUI/user/useapi_token.txt.\n\nNano Banana image -> Veo 3.1 Lite video from it -> 1080p upscale (a paid Google AI plan). Videos are saved to output/useapi-google-flow."
+      ],
+      "widgets_values_named": {
+        "text": "Google Flow through the useapi.net API (third-party, not affiliated with Google).\n\nBefore you queue:\n1. Get a useapi.net API token: https://useapi.net/docs/start-here/setup-useapi?utm_source=comfyui&utm_medium=workflow\n2. Connect your Google account once: https://useapi.net/docs/start-here/setup-google-flow?utm_source=comfyui&utm_medium=workflow\n3. Set USEAPI_TOKEN before starting ComfyUI, or put the token in ComfyUI/user/useapi_token.txt.\n\nNano Banana image -> Veo 3.1 Lite video from it -> 1080p upscale (a paid Google AI plan). Videos are saved to output/useapi-google-flow."
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      1,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      3,
+      3,
+      1,
+      4,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9,
+      "offset": [
+        20,
+        60
+      ]
+    }
+  },
+  "version": 0.4
+}

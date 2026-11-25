@@ -1,0 +1,22 @@
+[project]
+name = "useapi-google-flow"
+description = "Google Flow nodes: Veo 3.1 Lite and Omni 1.2 Flash video, Nano Banana images and 1080p/4K video upscale on your own Google AI plan, through the third-party useapi.net API."
+version = "0.1.0"
+license = { file = "LICENSE" }
+dependencies = ["requests>=2.28"]
+keywords = ["google flow", "veo", "veo 3.1", "nano banana", "omni flash", "video", "api"]
+
+[project.urls]
+Repository = "https://github.com/useapi/comfyui-google-flow"
+Documentation = "https://useapi.net/docs/api-google-flow-v1?utm_source=comfyui&utm_medium=registry"
+"Bug Tracker" = "https://github.com/useapi/comfyui-google-flow/issues"
+
+[tool.comfy]
+PublisherId = "useapi"
+DisplayName = "Google Flow (Veo 3.1, Nano Banana) via useapi.net"
+Icon = "https://useapi.net/assets/images/logo-paperboat.svg"
+includes = []
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+testpaths = ["tests"]
