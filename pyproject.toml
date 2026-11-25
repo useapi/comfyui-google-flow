@@ -13,7 +13,7 @@ Documentation = "https://useapi.net/docs/api-google-flow-v1?utm_source=comfyui&u
 
 [tool.comfy]
 PublisherId = "useapi"
-DisplayName = "Google Flow (Veo 3.1, Nano Banana) via useapi.net"
+DisplayName = "Google Flow (Veo 3.1, Omni 1.2 Flash, Nano Banana) via useapi.net"
 Icon = "https://useapi.net/assets/images/logo-paperboat.svg"
 includes = []
 
