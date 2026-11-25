@@ -6,6 +6,8 @@ Generations use your Google account's Flow credits, not per-second Comfy credits
 
 useapi.net is a third-party API service. It is not affiliated with Google.
 
+Step-by-step tutorial: [Veo 3.1 and Nano Banana in ComfyUI](https://useapi.net/docs/articles/google-flow-comfyui?utm_source=comfyui&utm_medium=github).
+
 ![Image to video to upscale workflow](docs/workflow.png)
 
 ## Nodes
@@ -21,8 +23,8 @@ ComfyUI's own Save Video and video nodes.
 
 ## What you need
 
-1. A Google account with Google Flow. Every model here runs on the free tier; a Google AI Plus, Pro or Ultra plan gives
-   more Flow credits, longer Omni clips and upscaling.
+1. A Google account with Google Flow. Images and videos work on the free tier; a Google AI Plus, Pro or Ultra plan
+   gives more Flow credits and Omni clips longer than 10 s, and upscaling needs one (4K needs Ultra).
 2. A [useapi.net subscription and API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=comfyui&utm_medium=github).
 3. The Google account connected once at useapi.net: [Setup Google Flow](https://useapi.net/docs/start-here/setup-google-flow?utm_source=comfyui&utm_medium=github).
    You get 300 free captcha credits with your first account; after that, add your own captcha provider key.
@@ -63,6 +65,7 @@ In ComfyUI open **Templates** and search `google-flow`, or load them from [`exam
 
 ## Links
 
+- [Tutorial: Veo 3.1 and Nano Banana in ComfyUI](https://useapi.net/docs/articles/google-flow-comfyui?utm_source=comfyui&utm_medium=github)
 - [Google Flow API docs](https://useapi.net/docs/api-google-flow-v1?utm_source=comfyui&utm_medium=github)
 - [More Google Flow examples (n8n, Python, Node.js, Dify)](https://github.com/useapi/google-flow-api)
 - [useapi.net](https://useapi.net/?utm_source=comfyui&utm_medium=github)
