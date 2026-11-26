@@ -6,7 +6,7 @@ Generations use your Google account's Flow credits, not per-second Comfy credits
 
 useapi.net is a third-party API service. It is not affiliated with Google.
 
-Step-by-step tutorial: [Veo 3.1 and Nano Banana in ComfyUI](https://useapi.net/docs/articles/google-flow-comfyui?utm_source=comfyui&utm_medium=github).
+Step-by-step tutorial: [Veo 3.1 and Nano Banana in ComfyUI](https://useapi.net/docs/articles/google-flow-comfyui?utm_source=comfyui&utm_medium=github). Video: [the workflow's real outputs as a YouTube Short](https://youtube.com/shorts/pVGXdV_tf1k).
 
 ![Image to video to upscale workflow](docs/workflow.png)
 
