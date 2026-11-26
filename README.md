@@ -48,7 +48,7 @@ image and video it saves, and into its history, so a token typed into a node wou
 
 ## Example workflows
 
-In ComfyUI open **Templates** and search `google-flow`, or load them from [`example_workflows/`](example_workflows):
+In ComfyUI open **Templates** and search `google-flow`, load them from [`example_workflows/`](example_workflows), or download all three from [Civitai](https://civitai.com/models/3064961):
 
 - `google-flow-image-to-video-upscale.json`: Nano Banana image → Veo 3.1 Lite video from it → 1080p upscale.
 - `google-flow-text-to-video.json`: Omni 1.2 Flash text to video.
